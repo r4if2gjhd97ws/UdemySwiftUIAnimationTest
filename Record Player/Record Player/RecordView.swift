@@ -16,7 +16,7 @@ struct RecordView: View {
         Image("record").resizable().frame(width: 275, height: 275)
             .shadow(color: .gray, radius: 1, x: 0, y: 0)
             .rotationEffect(Angle.degrees(degrees))
-            .animation(Animation.linear(duration: shouldAnimate ? 60 : 0).delay(1.5),value: shouldAnimate)
+            .animation(Animation.easeIn(duration: shouldAnimate ? 60 : 0).delay(0.5),value: shouldAnimate)
     }
 }
 
